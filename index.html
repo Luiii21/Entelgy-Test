@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Entelgy</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="components/countries.js"></script>
 </head>
 <body>
 <div class="container">
@@ -18,20 +17,27 @@
             <h1>Paises de habla hispana</h1>
         </div>
     </header>
-    <div class="page-content">
+    <div class="page-content" id="page-content">
         <p class="font-roboto w-light">
             En la siguiente tabla se muestran los países que tienen al español como una de sus lenguas oficiales,
             clasificados por número de hispanohablantes. En esta lista se incluyen territorios pendientes de
             descolonización
             (según el Comité de Descolonización de las Naciones Unidas) como Puerto Rico y el Sahara Occidental.
         </p>
-            <app-country-card></app-country-card>
+        <app-country-card></app-country-card>
     </div>
     <footer class="page-footer">
     <span>
        © Entelgy 2021
     </span>
     </footer>
+    <div class="modal-bg">
+        <div class="modal">
+            <span class="bg-gone font-roboto">X</span>
+            <h5 class="font-roboto">Continente: <span id="continent"> - </span></h5>
+        </div>
+    </div>
 </div>
+<script src="components/countries.js"></script>
 </body>
 </html>
